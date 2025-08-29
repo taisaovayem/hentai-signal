@@ -39,7 +39,6 @@ void setup() {
   digitalWrite(LED_PIN, LOW);
 
   WiFi.mode(WIFI_STA);
-  esp_wifi_set_max_tx_power(62);
   if (esp_now_init() != ESP_OK) {
     Serial.println("Error initializing ESP-NOW");
     return;
